@@ -1,28 +1,3 @@
-// .gridContainer {
-//   margin: 20px auto;
-//   width: 400px;
-//   height: 400px;
-// //   background-color: #fff;
-//   display: grid;
-//   grid-template-columns: 200px 200px;
-//   grid-row: auto auto;
-//   grid-column-gap: 10px;
-//   grid-row-gap: 10px;
-//   .gridBox {
-//     background-color: #333;
-//     padding: 80px;
-//     border-radius: 10px;
-//     // color: #fff;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     font-size: 40px;
-//     font-family: sans-serif;
-//   }
-// }
-
-
-
 .reveal{
     position: relative;
     transform: translateY(150px);
@@ -35,9 +10,6 @@
     opacity: 1;
   }
 
-  /*
-	Using Bootstrap
-*/
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
 .page_title {
@@ -48,7 +20,6 @@
 	text-transform: uppercase;
 }
 
-/* PEN STYLES ========== */
 .row {
 	margin: 0;
 }
@@ -122,13 +93,13 @@
 }
 
 .box-01 .inner {
-	background-image: url('https://picsum.photos/1024/768?image=1033');
+	background-image: url('https://studyinginswitzerland.com/wp-content/uploads/2022/03/buying-car-and-registration-in-Switserland-1170x600.jpg');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .box-02 .inner {
-	background-image: url('https://picsum.photos/1024/768?image=967');
+	background-image: url('https://images.unsplash.com/photo-1471417834049-cbf30bf7a2a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3RhY2slMjBvZiUyMG1hZ2F6aW5lc3xlbnwwfHwwfHw%3D&w=1000&q=80');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;

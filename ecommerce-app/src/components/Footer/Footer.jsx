@@ -9,7 +9,7 @@ export default function Footer() {
     <li>Developed by: Brandon Carter</li>
     <li><a rel="noreferrer" target="_blank" href="https://twitter.com">Twitter</a></li>
     <Link to="/contact">
-    <li><a rel="noreferrer" href="/contact">Contact Us!</a></li>
+    <li><a rel="noreferrer" href="/contact">Contact</a></li>
     </Link>
     <li><a rel="noreferrer" target="_blank" href="https://facebook.com">Facebook</a></li>
     <li><a rel="noreferrer" target="_blank" href="https://github.com/brandnn07">Github</a></li>

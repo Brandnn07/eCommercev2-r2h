@@ -16,7 +16,7 @@ export default function Carousel() {
     return( 
     <>
         <h2 class="reveal sliderHead">
-        Check out our shop for more products!
+        Emporium quality vehicles
       </h2>
 
       <div class="reveal homeContainer">

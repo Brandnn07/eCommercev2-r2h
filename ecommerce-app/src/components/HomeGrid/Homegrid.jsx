@@ -25,10 +25,10 @@ export default function HomeGrid() {
 	<div class="gridContainer">
 		<div class="test_box box-01 col-xs-6 col-md-4">
 			<div class="inner">
-				<a href="#" class="test_click">
+				<a href="/products" class="test_click">
 					<div class="flex_this">
-						<h1 class="test_title">Shop</h1>
-						<span class="test_link">Link</span>
+						<h1 class="test_title">Visit Our Shop</h1>
+						<span class="test_link">New Arrivals</span>
 					</div>
 				</a>
 			</div>
@@ -37,18 +37,18 @@ export default function HomeGrid() {
 			<div class="inner">
 				<a href="#" class="test_click">
 					<div class="flex_this">
-						<h1 class="test_title">Contact Us</h1>
-						<span class="test_link">Link</span>
+						<h1 class="test_title">Official Emporium Magazine</h1>
+						<span class="test_link">Discover More</span>
 					</div>
 				</a>
 			</div>
 		</div>
 		<div class="test_box box-03 col-xs-6 col-md-4">
 			<div class="inner">
-				<a href="#" class="test_click">
+				<a href="/contact" class="test_click">
 					<div class="flex_this">
-						<h1 class="test_title">Who We Are</h1>
-						<span class="test_link">Link</span>
+						<h1 class="test_title">Join Our Newsletter</h1>
+						<span class="test_link">Let's Do More Together</span>
 					</div>
 				</a>
 			</div>
