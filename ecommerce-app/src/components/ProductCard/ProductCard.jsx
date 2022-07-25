@@ -15,7 +15,7 @@ const ProductsCard = ({
           <div class="flip-card product-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src={image} alt="Avatar" />
+                <img src={image} alt={name} />
                 <div class="product-container">
                   <h4>
                     <b>{name}</b>
