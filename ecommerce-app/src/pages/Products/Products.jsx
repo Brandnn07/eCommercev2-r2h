@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Component } from "react";
+import React, { useState, useEffect } from "react";
 import ProductsCard from "../../components/ProductCard/ProductCard";
 import axios from "axios";
 
@@ -51,6 +51,16 @@ function filterDescDate () {
       setProducts(response.data);
     })
 }
+
+var btns = document.getElementsByClassName("productBtn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
     return (
       <main class="productMain">
         <div id="myBtnContainer">
