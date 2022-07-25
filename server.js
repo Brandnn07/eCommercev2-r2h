@@ -22,12 +22,52 @@ app.use(cors());
 app.use(express.json());
 
 
-app.get('/', (req, res) => {
+app.get('/api/products', (req, res) => {
     db.query('SELECT * FROM cars', (err, result) => {
         if (err) {
             console.log(err);
         } else {
-            res.send('Good to go!')
+            res.send(result);
+        }
+    })
+});
+
+app.get('/api/products/ascprice', (req, res) => {
+    db.query('SELECT * FROM cars ORDER BY LENGTH(car_price), car_price', (err, result) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.send(result);
+        }
+    })
+});
+
+app.get('/api/products/descprice', (req, res) => {
+    db.query('SELECT * FROM cars ORDER BY LENGTH(car_price) DESC, car_price DESC', (err, result) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.send(result);
+        }
+    })
+});
+
+app.get('/api/products/ascdate', (req, res) => {
+    db.query('SELECT * FROM cars ORDER BY car_date ASC', (err, result) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.send(result);
+        }
+    })
+});
+
+app.get('/api/products/descdate', (req, res) => {
+    db.query('SELECT * FROM cars ORDER BY car_date DESC', (err, result) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.send(result);
         }
     })
 });
