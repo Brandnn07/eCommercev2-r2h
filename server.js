@@ -12,12 +12,12 @@ const db = mysql.createPool({
     database: process.env.DATABASE,
 });
 
-db.connect((err) => {
-    if (err) {
-      throw err;
-    }
-    console.log("Database Connection Successful");
-  });
+// db.connect((err) => {
+//     if (err) {
+//       throw err;
+//     }
+//     console.log("Database Connection Successful");
+//   });
 app.use(cors());
 app.use(express.json());
 
