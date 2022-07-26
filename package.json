@@ -88,5 +88,8 @@
   "bugs": {
     "url": "https://github.com/Brandnn07/eCommercev2-r2h/issues"
   },
-  "homepage": "https://github.com/Brandnn07/eCommercev2-r2h#readme"
+  "homepage": "https://github.com/Brandnn07/eCommercev2-r2h#readme",
+  "devDependencies": {
+    "netlify-cli": "^10.11.2"
+  }
 }
