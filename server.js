@@ -7,7 +7,6 @@ const app = express();
 
 const db = mysql.createConnection({
     host: process.env.HOST,
-    // port: process.env.DB_PORT,
     user: process.env.USER,
     password: process.env.PASSWORD,
     database: process.env.DATABASE,
@@ -21,6 +20,8 @@ db.connect((err) => {
   });
 app.use(cors());
 app.use(express.json());
+
+app.get('/', (req, res) => ("This is working! Path to apis"))
 
 
 app.get('/api/products', (req, res) => {
