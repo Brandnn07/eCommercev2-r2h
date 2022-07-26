@@ -17,12 +17,13 @@ export default class Navbar extends Component {
     <Link to="/products">
   <a href="*">SHOP</a>
     </Link>
-    <Link to="/contact">
-  <a href="*">CONTACT</a>
-    </Link>
     <Link to="/cart">
   <a href="*">CART</a>
     </Link>
+    <Link to="/contact">
+  <a href="*">CONTACT</a>
+    </Link>
+    
     <figure>
       <img src={require("../../assests/images/logomaybe2.png")} alt="" />
     </figure>

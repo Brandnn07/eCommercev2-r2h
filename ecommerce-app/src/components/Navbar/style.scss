@@ -1,5 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 
+#root {
+    height: auto;
+}
+
 div.container
 {
     font-family: monospace;
@@ -65,3 +69,19 @@ div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
     width: 100%;
 }
 
+@media screen and (max-width: 950px) {
+    #root {
+        width: 1000px;
+    }
+  }
+@media screen and (max-width: 1275px) {
+    figure img {
+        margin-left: 300px;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    figure img {
+        margin-left: 0px;
+    }
+}

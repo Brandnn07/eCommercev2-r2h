@@ -20,20 +20,20 @@ const Purchase = () => {
   }, []);
   var arrayN = [];
   var arrayP = [];
-  var arrayI = [];
+  // var arrayI = [];
   const purchaseName = document.querySelector(".sub");
   const purchasePrice = document.querySelector(".price");
-  const holder = document.querySelector(".purchaseImg");
+  // const holder = document.querySelector(".purchaseImg");
 
   const onPurchaseHandler = () => {
-    let purchaseImage = holder.src.replace("http://localhost:3000", "..");
+    // let purchaseImage = holder.src.replace("http://localhost:3000", "..");
     arrayN.push(purchaseName.textContent);
     arrayP.push(purchasePrice.textContent);
-    arrayI.push(purchaseImage);
+    // arrayI.push(purchaseImage);
 
     localStorage.setItem("Cart Items Name", JSON.stringify(arrayN));
     localStorage.setItem("Cart Items Price", JSON.stringify(arrayP));
-    localStorage.setItem("Cart Items Image", JSON.stringify(arrayI));
+    // localStorage.setItem("Cart Items Image", JSON.stringify(arrayI));
     alert("Item added to cart!");
   };
 
