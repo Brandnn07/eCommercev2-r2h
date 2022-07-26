@@ -9,7 +9,7 @@ const Purchase = () => {
   //   console.log(reqId.id);
   useEffect(() => {
     axios
-      .get("http://localhost:3001/api/products/" + reqId.id)
+      .get("https://emporiumr2h-app.herokuapp.com/api/products/" + reqId.id)
       .then((response) => {
         // console.log(response.data[0]);
         setProduct(response.data[0]);

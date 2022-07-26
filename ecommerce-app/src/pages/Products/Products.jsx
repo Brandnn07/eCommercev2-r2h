@@ -6,7 +6,7 @@ export default function Products() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:3001/api/products")
+      .get("https://emporiumr2h-app.herokuapp.com/api/products")
       .then((response) => {
         setProducts(response.data);
       })
@@ -16,33 +16,33 @@ export default function Products() {
   }, []);
 
   function filterNone() {
-    axios.get("http://localhost:3001/api/products").then((response) => {
+    axios.get("https://emporiumr2h-app.herokuapp.com/api/products").then((response) => {
       setProducts(response.data);
     });
   }
 
   function filterAscPrice() {
     axios
-      .get("http://localhost:3001/api/products/ascprice")
+      .get("https://emporiumr2h-app.herokuapp.com/api/products/ascprice")
       .then((response) => {
         setProducts(response.data);
       });
   }
   function filterDescPrice() {
     axios
-      .get("http://localhost:3001/api/products/descprice")
+      .get("https://emporiumr2h-app.herokuapp.com/api/products/descprice")
       .then((response) => {
         setProducts(response.data);
       });
   }
   function filterAscDate() {
-    axios.get("http://localhost:3001/api/products/ascdate").then((response) => {
+    axios.get("https://emporiumr2h-app.herokuapp.com/api/products/ascdate").then((response) => {
       setProducts(response.data);
     });
   }
   function filterDescDate() {
     axios
-      .get("http://localhost:3001/api/products/descdate")
+      .get("https://emporiumr2h-app.herokuapp.com/api/products/descdate")
       .then((response) => {
         setProducts(response.data);
       });

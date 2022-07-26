@@ -5,7 +5,7 @@ require("dotenv").config();
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-const db = mysql.createPool({
+const db = mysql.createConnection({
     host: process.env.HOST,
     user: process.env.USER,
     password: process.env.PASSWORD,
@@ -88,4 +88,3 @@ app.listen(PORT || PORT, () => {
     console.log(`The server listening on port ${PORT}`)
 })
 
-// mysql://bcd1c9194447d6:efeb70e3@us-cdbr-east-06.cleardb.net/heroku_e7bc31d25517e69?reconnect=true
