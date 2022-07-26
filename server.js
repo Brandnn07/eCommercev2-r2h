@@ -5,6 +5,8 @@ require("dotenv").config();
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+console.log(process.env)
+
 const db = mysql.createConnection({
     host: process.env.HOST,
     user: process.env.USER,
@@ -13,12 +15,6 @@ const db = mysql.createConnection({
 });
 console.log("TESTING THIS", process.env.HOST);
 
-// db.connect((err) => {
-//     if (err) {
-//       throw err;
-//     }
-//     console.log("Database Connection Successful");
-//   });
 app.use(cors());
 app.use(express.json());
 
