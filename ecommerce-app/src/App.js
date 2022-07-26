@@ -6,8 +6,11 @@ import HomePage from './pages/Home/Home';
 import Products from './pages/Products/Products';
 import Contact from './pages/Contact/Contact';
 import About from './pages/About/About';
+import Purchase from './pages/Purchase/Purchase';
+import Cart from './pages/Cart/Cart';
 
 function App() {
+
   return (
     <>
       <Router>
@@ -17,6 +20,8 @@ function App() {
           <Route exact path="/products" element={<Products />}/>
           <Route exact path="/contact" element={<Contact />}/>
           <Route exact path="/about" element={<About />}/>
+          <Route exact path="/cart" element={<Cart />}/>
+          <Route exact path="/product/:id" element={<Purchase />}/>
         </Routes>
         <Footer />
       </Router>

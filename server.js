@@ -72,6 +72,18 @@ app.get('/api/products/descdate', (req, res) => {
     })
 });
 
+app.get('/api/products/:id', (req, res) => {
+    const reqId = req.params.id
+    // console.log(reqId)
+    db.query('SELECT * FROM cars WHERE id = ' + reqId, (err, result) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.send(result);
+        }
+    })
+});
+
 app.listen(PORT, () => {
     console.log(`The server listening on port ${PORT}`)
 })

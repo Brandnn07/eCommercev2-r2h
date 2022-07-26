@@ -4,7 +4,7 @@ import "./style.scss";
 export default function AboutUsSection() {
   return (
     <>
-      <section class="aboutUsSection">
+    <section class="aboutUsSection">
         Born of the spirit of innovation, Emporium epitomises the power of a
         lifelong passion and the beauty of limitless human achievement, creating
         & marketing timeless icons for a changing world
@@ -47,7 +47,8 @@ export default function AboutUsSection() {
             </p>
           </div>
         </div>
-      </main>
+      </main> 
+      
     </>
   );
 }
