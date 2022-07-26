@@ -84,6 +84,6 @@ app.get('/api/products/:id', (req, res) => {
     })
 });
 
-app.listen(PORT, () => {
+app.listen(PORT || PORT, () => {
     console.log(`The server listening on port ${PORT}`)
 })
