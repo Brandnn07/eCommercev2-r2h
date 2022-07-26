@@ -21,8 +21,6 @@ db.connect((err) => {
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => ("This is working! Path to apis"))
-
 
 app.get('/api/products', (req, res) => {
     db.query('SELECT * FROM cars', (err, result) => {
