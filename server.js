@@ -1,15 +1,16 @@
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
-const PORT = 3001;
+require("dotenv").config();
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 const db = mysql.createConnection({
-    host: 'localhost',
-    port: 3306,
-    user: 'root',
-    password: 'password',
-    database: 'emporium_db',
+    host: process.env.HOST,
+    port: process.env.DB_PORT,
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE,
 });
 
 db.connect((err) => {
@@ -87,4 +88,3 @@ app.get('/api/products/:id', (req, res) => {
 app.listen(PORT, () => {
     console.log(`The server listening on port ${PORT}`)
 })
-
