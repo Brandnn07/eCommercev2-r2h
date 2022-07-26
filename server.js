@@ -87,3 +87,5 @@ app.get('/api/products/:id', (req, res) => {
 app.listen(PORT || PORT, () => {
     console.log(`The server listening on port ${PORT}`)
 })
+
+// mysql://bcd1c9194447d6:efeb70e3@us-cdbr-east-06.cleardb.net/heroku_e7bc31d25517e69?reconnect=true
